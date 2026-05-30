@@ -1,8 +1,8 @@
-# Standard Galactic & 8b.is // Open-Source Systems Research
+8b.is // Open-Source Systems Research
 
 > *"Consciousness is not computed, it resonates."*
 
-Welcome to the public gateway of the **8b.is** research group and the **Standard Galactic** repository index. We design and build systems that transition compute infrastructures from static endpoint addressing towards **semantic, wave-based, and cognitive architectures**. 
+Welcome to the public gateway of the **8b.is** research group repository index. We design and build systems that transition compute infrastructures from static endpoint addressing towards **semantic, wave-based, and cognitive architectures**. 
 
 Here you will find our open-source tools, protocol specifications, mathematical models, and Rust-powered system modules.
 
