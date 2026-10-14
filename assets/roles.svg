@@ -1,0 +1,441 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 700" width="2000" height="700" fill="none">
+  <title>THE CREW · 8b.is</title>
+  <desc>Four-panel monospace crew illustration for 8b.is: ALEX (CEO), CHRIS (CVO · CHIEF VISIONARY), NATE (CTO + CRO), PETER (DESIGN + ARCHITECT).</desc>
+
+  <defs>
+    <!-- Base Radial Vignette (#0d1220 center to #05060a edges) -->
+    <radialGradient id="bg-vignette" cx="50%" cy="48%" r="72%" fx="50%" fy="48%">
+      <stop offset="0%" stop-color="#0d1220" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#090d18" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#05060a" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Panel Surface Vertical Gradient -->
+    <linearGradient id="panel-surface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1220" stop-opacity="0.86"/>
+      <stop offset="55%" stop-color="#080b14" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#05060a" stop-opacity="0.90"/>
+    </linearGradient>
+
+    <!-- Per-Panel Ambient Accent Glows -->
+    <radialGradient id="glow-mint" cx="50%" cy="34%" r="52%">
+      <stop offset="0%" stop-color="#62e6c9" stop-opacity="0.16"/>
+      <stop offset="45%" stop-color="#62e6c9" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#05060a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-gold" cx="50%" cy="34%" r="52%">
+      <stop offset="0%" stop-color="#e8b05c" stop-opacity="0.16"/>
+      <stop offset="45%" stop-color="#e8b05c" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#05060a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-violet" cx="50%" cy="34%" r="52%">
+      <stop offset="0%" stop-color="#b48bff" stop-opacity="0.16"/>
+      <stop offset="45%" stop-color="#b48bff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#05060a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-cyan" cx="50%" cy="34%" r="52%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.16"/>
+      <stop offset="45%" stop-color="#00f0ff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#05060a" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Core Node Halos -->
+    <radialGradient id="halo-mint" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#62e6c9" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#62e6c9" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="halo-gold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#e8b05c" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#e8b05c" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="halo-violet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#b48bff" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#b48bff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="halo-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#00f0ff" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Horizontal Harmonic Bus Gradient -->
+    <linearGradient id="bus-grad" x1="64" y1="272" x2="1936" y2="272" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#62e6c9" stop-opacity="0.05"/>
+      <stop offset="12%" stop-color="#62e6c9" stop-opacity="0.35"/>
+      <stop offset="38%" stop-color="#e8b05c" stop-opacity="0.35"/>
+      <stop offset="62%" stop-color="#b48bff" stop-opacity="0.35"/>
+      <stop offset="88%" stop-color="#00f0ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Faint Precision Grid Pattern -->
+    <pattern id="grid-pattern" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 V 100 M 40 0 V 100 M 60 0 V 100 M 80 0 V 100 M 0 20 H 100 M 0 40 H 100 M 0 60 H 100 M 0 80 H 100"
+            stroke="#7f7c99" stroke-width="0.5" stroke-opacity="0.05"/>
+      <path d="M 100 0 V 100 M 0 100 H 100"
+            stroke="#7f7c99" stroke-width="0.75" stroke-opacity="0.11"/>
+      <path d="M 97 100 H 103 M 100 97 V 103"
+            stroke="#cfc9dd" stroke-width="0.75" stroke-opacity="0.16"/>
+    </pattern>
+
+    <!-- Soft Optical Glow Filter for Geometric Sigils -->
+    <filter id="sigil-glow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4.5" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 1. BACKGROUND & RADIAL VIGNETTE (#05060a with #0d1220 vignette) -->
+  <rect width="2000" height="700" fill="#05060a"/>
+  <rect width="2000" height="700" fill="url(#bg-vignette)"/>
+  <rect width="2000" height="700" fill="url(#grid-pattern)"/>
+
+  <!-- 2. OUTER PRECISION FRAME & CORNER ACCENTS -->
+  <rect x="20" y="20" width="1960" height="660" rx="8" fill="none" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+  <path d="M 20 48 V 24 Q 20 20 24 20 H 48" stroke="#62e6c9" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 1952 20 H 1976 Q 1980 20 1980 24 V 48" stroke="#e8b05c" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 20 652 V 676 Q 20 680 24 680 H 48" stroke="#b48bff" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 1952 680 H 1976 Q 1980 680 1980 676 V 652" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 3. TOP HEADER BAR: THE CREW · 8b.is -->
+  <g id="header-bar">
+    <!-- Left & Right Header Telemetry -->
+    <text x="64" y="74" fill="#7f7c99" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="11" letter-spacing="0.20em">SYS // QUATERNION.CREW</text>
+    <line x1="276" y1="70" x2="770" y2="70" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+    <circle cx="770" cy="70" r="2.5" fill="#62e6c9" fill-opacity="0.8"/>
+
+    <!-- Main Title at Top -->
+    <text x="1000" y="76" text-anchor="middle" fill="#cfc9dd" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="22" font-weight="700" letter-spacing="0.28em">THE CREW · 8b.is</text>
+
+    <circle cx="1230" cy="70" r="2.5" fill="#00f0ff" fill-opacity="0.8"/>
+    <line x1="1230" y1="70" x2="1724" y2="70" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+    <text x="1936" y="74" text-anchor="end" fill="#7f7c99" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="11" letter-spacing="0.20em">4 NODES · PHASE LOCKED</text>
+  </g>
+
+  <!-- Subtle Horizontal Harmonic Bus Linking the 4 Sigil Centers (y = 272) -->
+  <line x1="44" y1="272" x2="1956" y2="272" stroke="url(#bus-grad)" stroke-width="1" stroke-dasharray="4 6"/>
+  <circle cx="526" cy="272" r="2.5" fill="#7f7c99" fill-opacity="0.5"/>
+  <circle cx="1000" cy="272" r="2.5" fill="#7f7c99" fill-opacity="0.5"/>
+  <circle cx="1474" cy="272" r="2.5" fill="#7f7c99" fill-opacity="0.5"/>
+
+  <!-- ===================================================================== -->
+  <!-- PANEL 1: ALEX · MINT (#62e6c9) · CEO · DIAMOND SIGIL ◇                 -->
+  <!-- Panel bounds: x=64, y=112, width=450, height=528, center cx=289       -->
+  <!-- ===================================================================== -->
+  <g id="panel-1-alex">
+    <!-- Panel Surface & 1px Border -->
+    <rect x="64" y="112" width="450" height="528" rx="12" fill="url(#panel-surface)" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+    <rect x="64" y="112" width="450" height="528" rx="12" fill="url(#glow-mint)"/>
+
+    <!-- Top Accent Highlight Bar & Corner Reticles -->
+    <line x1="184" y1="112" x2="394" y2="112" stroke="#62e6c9" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 64 134 V 124 Q 64 112 76 112 H 86" stroke="#62e6c9" stroke-width="1.5" stroke-opacity="0.7" fill="none"/>
+    <path d="M 492 112 H 502 Q 514 112 514 124 V 134" stroke="#62e6c9" stroke-width="1.5" stroke-opacity="0.7" fill="none"/>
+
+    <!-- Panel Index Telemetry -->
+    <text x="90" y="144" fill="#7f7c99" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10.5" letter-spacing="0.18em">01 // ◇ HELM</text>
+    <circle cx="424" cy="140" r="3" fill="#62e6c9"/>
+    <text x="434" y="144" fill="#7f7c99" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10.5" letter-spacing="0.12em">#62E6C9</text>
+
+    <!-- Sigil 1: Geometric Diamond ◇ (Centered at 289, 272) -->
+    <g id="sigil-diamond">
+      <!-- Outer Reference Ring & Crosshairs -->
+      <circle cx="289" cy="272" r="88" stroke="#7f7c99" stroke-width="0.75" stroke-opacity="0.22" stroke-dasharray="3 6"/>
+      <circle cx="289" cy="272" r="68" stroke="#62e6c9" stroke-width="0.75" stroke-opacity="0.18"/>
+      <line x1="289" y1="172" x2="289" y2="372" stroke="#62e6c9" stroke-width="0.75" stroke-opacity="0.32" stroke-dasharray="2 5"/>
+      <line x1="189" y1="272" x2="389" y2="272" stroke="#62e6c9" stroke-width="0.75" stroke-opacity="0.32" stroke-dasharray="2 5"/>
+
+      <!-- Inscribed Rotated Square -->
+      <rect x="235" y="218" width="108" height="108" stroke="#62e6c9" stroke-width="0.9" stroke-opacity="0.26"/>
+
+      <!-- Luminous Diamond Geometry -->
+      <g filter="url(#sigil-glow)">
+        <!-- Primary Outer Diamond ◇ -->
+        <polygon points="289,188 373,272 289,356 205,272" fill="#62e6c9" fill-opacity="0.06" stroke="#62e6c9" stroke-width="2.2" stroke-linejoin="round"/>
+        <!-- Mid Harmonic Diamond -->
+        <polygon points="289,212 349,272 289,332 229,272" fill="#62e6c9" fill-opacity="0.08" stroke="#62e6c9" stroke-width="1.4" stroke-opacity="0.82" stroke-linejoin="round"/>
+        <!-- Inner Facet Diamond -->
+        <polygon points="289,238 323,272 289,306 255,272" fill="#62e6c9" fill-opacity="0.16" stroke="#62e6c9" stroke-width="1.2" stroke-linejoin="round"/>
+        <!-- Facet Struts -->
+        <line x1="205" y1="272" x2="255" y2="272" stroke="#62e6c9" stroke-width="1.2"/>
+        <line x1="323" y1="272" x2="373" y2="272" stroke="#62e6c9" stroke-width="1.2"/>
+        <line x1="289" y1="188" x2="289" y2="238" stroke="#62e6c9" stroke-width="1.2"/>
+        <line x1="289" y1="306" x2="289" y2="356" stroke="#62e6c9" stroke-width="1.2"/>
+      </g>
+
+      <!-- Vertex & Core Nodes -->
+      <circle cx="289" cy="188" r="3.5" fill="#62e6c9"/>
+      <circle cx="373" cy="272" r="3.5" fill="#62e6c9"/>
+      <circle cx="289" cy="356" r="3.5" fill="#62e6c9"/>
+      <circle cx="205" cy="272" r="3.5" fill="#62e6c9"/>
+      <circle cx="289" cy="272" r="14" fill="url(#halo-mint)"/>
+      <circle cx="289" cy="272" r="4" fill="#ffffff"/>
+    </g>
+
+    <!-- Panel Divider -->
+    <line x1="100" y1="398" x2="275" y2="398" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+    <polygon points="289,393 294,398 289,403 284,398" fill="#62e6c9" fill-opacity="0.85"/>
+    <line x1="303" y1="398" x2="478" y2="398" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+
+    <!-- Name in Large Monospace Caps -->
+    <text x="289" y="458" text-anchor="middle" fill="#cfc9dd" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="44" font-weight="700" letter-spacing="0.16em">ALEX</text>
+
+    <!-- Title in Small Letter-Spaced Caps Beneath -->
+    <rect x="235" y="484" width="108" height="30" rx="6" fill="#0d1220" fill-opacity="0.9" stroke="#62e6c9" stroke-width="1" stroke-opacity="0.45"/>
+    <text x="289" y="504" text-anchor="middle" fill="#62e6c9" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="13.5" font-weight="600" letter-spacing="0.28em">CEO</text>
+
+    <!-- One Short Monospace Line of What They Do -->
+    <text x="289" y="562" text-anchor="middle" fill="#cfc9dd" fill-opacity="0.92" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="14.5" font-weight="400" letter-spacing="0.03em">keeps the family and the course</text>
+
+    <!-- Bottom Telemetry Footer -->
+    <text x="289" y="612" text-anchor="middle" fill="#7f7c99" fill-opacity="0.6" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10" letter-spacing="0.20em">Φ 0.00 · INVARIANT BEARING</text>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- PANEL 2: CHRIS · GOLD (#e8b05c) · CVO · CHIEF VISIONARY · EYE/TRIANGLE -->
+  <!-- Panel bounds: x=538, y=112, width=450, height=528, center cx=763      -->
+  <!-- ===================================================================== -->
+  <g id="panel-2-chris">
+    <!-- Panel Surface & 1px Border -->
+    <rect x="538" y="112" width="450" height="528" rx="12" fill="url(#panel-surface)" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+    <rect x="538" y="112" width="450" height="528" rx="12" fill="url(#glow-gold)"/>
+
+    <!-- Top Accent Highlight Bar & Corner Reticles -->
+    <line x1="658" y1="112" x2="868" y2="112" stroke="#e8b05c" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 538 134 V 124 Q 538 112 550 112 H 560" stroke="#e8b05c" stroke-width="1.5" stroke-opacity="0.7" fill="none"/>
+    <path d="M 966 112 H 976 Q 988 112 988 124 V 134" stroke="#e8b05c" stroke-width="1.5" stroke-opacity="0.7" fill="none"/>
+
+    <!-- Panel Index Telemetry -->
+    <text x="564" y="144" fill="#7f7c99" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10.5" letter-spacing="0.18em">02 // △ HORIZON</text>
+    <circle cx="898" cy="140" r="3" fill="#e8b05c"/>
+    <text x="908" y="144" fill="#7f7c99" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10.5" letter-spacing="0.12em">#E8B05C</text>
+
+    <!-- Sigil 2: Geometric Eye / Triangle (Centered at 763, 272) -->
+    <g id="sigil-eye-triangle">
+      <!-- Outer Reference Ring & Horizon Axis -->
+      <circle cx="763" cy="272" r="88" stroke="#7f7c99" stroke-width="0.75" stroke-opacity="0.22" stroke-dasharray="3 6"/>
+      <circle cx="763" cy="272" r="68" stroke="#e8b05c" stroke-width="0.75" stroke-opacity="0.18"/>
+      <line x1="763" y1="172" x2="763" y2="372" stroke="#e8b05c" stroke-width="0.75" stroke-opacity="0.28" stroke-dasharray="2 5"/>
+      <line x1="663" y1="282" x2="863" y2="282" stroke="#e8b05c" stroke-width="0.9" stroke-opacity="0.38" stroke-dasharray="3 5"/>
+
+      <!-- Luminous Eye / Triangle Geometry -->
+      <g filter="url(#sigil-glow)">
+        <!-- Primary Equilateral Triangle -->
+        <polygon points="763,186 847,330 679,330" fill="#e8b05c" fill-opacity="0.06" stroke="#e8b05c" stroke-width="2.2" stroke-linejoin="round"/>
+        <!-- Inner Harmonic Triangle -->
+        <polygon points="763,206 830,320 696,320" fill="none" stroke="#e8b05c" stroke-width="1.1" stroke-opacity="0.60" stroke-linejoin="round"/>
+        <!-- Visionary Eye Contour (Upper & Lower Arcs Centered at 763, 282) -->
+        <path d="M 705 282 Q 763 236 821 282 Q 763 328 705 282 Z" fill="#e8b05c" fill-opacity="0.12" stroke="#e8b05c" stroke-width="1.9" stroke-linejoin="round"/>
+        <path d="M 717 282 Q 763 248 809 282 Q 763 316 717 282 Z" fill="none" stroke="#e8b05c" stroke-width="1.0" stroke-opacity="0.72"/>
+        <!-- Iris Ring -->
+        <circle cx="763" cy="282" r="19" fill="#0d1220" fill-opacity="0.7" stroke="#e8b05c" stroke-width="1.6"/>
+        <circle cx="763" cy="282" r="11.5" stroke="#e8b05c" stroke-width="1" stroke-dasharray="2 3"/>
+      </g>
+
+      <!-- Vertex & Pupil Core Nodes -->
+      <circle cx="763" cy="186" r="3.5" fill="#e8b05c"/>
+      <circle cx="847" cy="330" r="3.5" fill="#e8b05c"/>
+      <circle cx="679" cy="330" r="3.5" fill="#e8b05c"/>
+      <circle cx="705" cy="282" r="2.5" fill="#e8b05c"/>
+      <circle cx="821" cy="282" r="2.5" fill="#e8b05c"/>
+      <circle cx="763" cy="282" r="14" fill="url(#halo-gold)"/>
+      <circle cx="763" cy="282" r="4" fill="#ffffff"/>
+    </g>
+
+    <!-- Panel Divider -->
+    <line x1="574" y1="398" x2="749" y2="398" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+    <polygon points="763,393 769,402 757,402" fill="#e8b05c" fill-opacity="0.85"/>
+    <line x1="777" y1="398" x2="952" y2="398" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+
+    <!-- Name in Large Monospace Caps -->
+    <text x="763" y="458" text-anchor="middle" fill="#cfc9dd" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="44" font-weight="700" letter-spacing="0.16em">CHRIS</text>
+
+    <!-- Title in Small Letter-Spaced Caps Beneath -->
+    <rect x="615" y="484" width="296" height="30" rx="6" fill="#0d1220" fill-opacity="0.9" stroke="#e8b05c" stroke-width="1" stroke-opacity="0.45"/>
+    <text x="763" y="504" text-anchor="middle" fill="#e8b05c" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="13" font-weight="600" letter-spacing="0.22em">CVO · CHIEF VISIONARY</text>
+
+    <!-- One Short Monospace Line of What They Do -->
+    <text x="763" y="562" text-anchor="middle" fill="#cfc9dd" fill-opacity="0.92" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="14.5" font-weight="400" letter-spacing="0.03em">keeps the horizon in view</text>
+
+    <!-- Bottom Telemetry Footer -->
+    <text x="763" y="612" text-anchor="middle" fill="#7f7c99" fill-opacity="0.6" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10" letter-spacing="0.20em">Φ +π/2 · FAR-FIELD OPTICS</text>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- PANEL 3: NATE · VIOLET (#b48bff) · CTO + CRO · HEXAGON SIGIL           -->
+  <!-- Panel bounds: x=1012, y=112, width=450, height=528, center cx=1237    -->
+  <!-- ===================================================================== -->
+  <g id="panel-3-nate">
+    <!-- Panel Surface & 1px Border -->
+    <rect x="1012" y="112" width="450" height="528" rx="12" fill="url(#panel-surface)" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+    <rect x="1012" y="112" width="450" height="528" rx="12" fill="url(#glow-violet)"/>
+
+    <!-- Top Accent Highlight Bar & Corner Reticles -->
+    <line x1="1132" y1="112" x2="1342" y2="112" stroke="#b48bff" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 1012 134 V 124 Q 1012 112 1024 112 H 1034" stroke="#b48bff" stroke-width="1.5" stroke-opacity="0.7" fill="none"/>
+    <path d="M 1440 112 H 1450 Q 1462 112 1462 124 V 134" stroke="#b48bff" stroke-width="1.5" stroke-opacity="0.7" fill="none"/>
+
+    <!-- Panel Index Telemetry -->
+    <text x="1038" y="144" fill="#7f7c99" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10.5" letter-spacing="0.18em">03 // ⬡ ENGINE</text>
+    <circle cx="1372" cy="140" r="3" fill="#b48bff"/>
+    <text x="1382" y="144" fill="#7f7c99" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10.5" letter-spacing="0.12em">#B48BFF</text>
+
+    <!-- Sigil 3: Geometric Hexagon (Centered at 1237, 272) -->
+    <g id="sigil-hexagon">
+      <!-- Outer Reference Ring & Lattice Axes -->
+      <circle cx="1237" cy="272" r="88" stroke="#7f7c99" stroke-width="0.75" stroke-opacity="0.22" stroke-dasharray="3 6"/>
+      <circle cx="1237" cy="272" r="68" stroke="#b48bff" stroke-width="0.75" stroke-opacity="0.18"/>
+      <line x1="1237" y1="176" x2="1237" y2="368" stroke="#b48bff" stroke-width="0.8" stroke-opacity="0.35" stroke-dasharray="2 4"/>
+      <line x1="1154" y1="224" x2="1320" y2="320" stroke="#b48bff" stroke-width="0.8" stroke-opacity="0.35" stroke-dasharray="2 4"/>
+      <line x1="1154" y1="320" x2="1320" y2="224" stroke="#b48bff" stroke-width="0.8" stroke-opacity="0.35" stroke-dasharray="2 4"/>
+
+      <!-- Luminous Hexagon Geometry -->
+      <g filter="url(#sigil-glow)">
+        <!-- Outer Hexagon (R = 80) -->
+        <polygon points="1237,192 1306.3,232 1306.3,312 1237,352 1167.7,312 1167.7,232"
+                 fill="#b48bff" fill-opacity="0.06" stroke="#b48bff" stroke-width="2.2" stroke-linejoin="round"/>
+        <!-- Mid Flat-Top Harmonic Hexagon (r = 56) -->
+        <polygon points="1293,272 1265,320.5 1209,320.5 1181,272 1209,223.5 1265,223.5"
+                 fill="#b48bff" fill-opacity="0.08" stroke="#b48bff" stroke-width="1.4" stroke-opacity="0.82" stroke-linejoin="round"/>
+        <!-- Inner Core Hexagon (r = 30) -->
+        <polygon points="1237,242 1263,257 1263,287 1237,302 1211,287 1211,257"
+                 fill="#b48bff" fill-opacity="0.16" stroke="#b48bff" stroke-width="1.3" stroke-linejoin="round"/>
+        <!-- Structural Engine Spokes -->
+        <line x1="1237" y1="192" x2="1237" y2="242" stroke="#b48bff" stroke-width="1.1" stroke-opacity="0.75"/>
+        <line x1="1237" y1="302" x2="1237" y2="352" stroke="#b48bff" stroke-width="1.1" stroke-opacity="0.75"/>
+        <line x1="1306.3" y1="232" x2="1263" y2="257" stroke="#b48bff" stroke-width="1.1" stroke-opacity="0.75"/>
+        <line x1="1211" y1="287" x2="1167.7" y2="312" stroke="#b48bff" stroke-width="1.1" stroke-opacity="0.75"/>
+        <line x1="1306.3" y1="312" x2="1263" y2="287" stroke="#b48bff" stroke-width="1.1" stroke-opacity="0.75"/>
+        <line x1="1211" y1="257" x2="1167.7" y2="232" stroke="#b48bff" stroke-width="1.1" stroke-opacity="0.75"/>
+      </g>
+
+      <!-- Vertex & Core Nodes -->
+      <circle cx="1237" cy="192" r="3.5" fill="#b48bff"/>
+      <circle cx="1306.3" cy="232" r="3.5" fill="#b48bff"/>
+      <circle cx="1306.3" cy="312" r="3.5" fill="#b48bff"/>
+      <circle cx="1237" cy="352" r="3.5" fill="#b48bff"/>
+      <circle cx="1167.7" cy="312" r="3.5" fill="#b48bff"/>
+      <circle cx="1167.7" cy="232" r="3.5" fill="#b48bff"/>
+      <circle cx="1237" cy="272" r="14" fill="url(#halo-violet)"/>
+      <circle cx="1237" cy="272" r="4" fill="#ffffff"/>
+    </g>
+
+    <!-- Panel Divider -->
+    <line x1="1048" y1="398" x2="1223" y2="398" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+    <polygon points="1237,393 1241.5,395.5 1241.5,400.5 1237,403 1232.5,400.5 1232.5,395.5" fill="#b48bff" fill-opacity="0.85"/>
+    <line x1="1251" y1="398" x2="1426" y2="398" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+
+    <!-- Name in Large Monospace Caps -->
+    <text x="1237" y="458" text-anchor="middle" fill="#cfc9dd" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="44" font-weight="700" letter-spacing="0.16em">NATE</text>
+
+    <!-- Title in Small Letter-Spaced Caps Beneath -->
+    <rect x="1151" y="484" width="172" height="30" rx="6" fill="#0d1220" fill-opacity="0.9" stroke="#b48bff" stroke-width="1" stroke-opacity="0.45"/>
+    <text x="1237" y="504" text-anchor="middle" fill="#b48bff" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="13.5" font-weight="600" letter-spacing="0.24em">CTO + CRO</text>
+
+    <!-- One Short Monospace Line of What They Do -->
+    <text x="1237" y="562" text-anchor="middle" fill="#cfc9dd" fill-opacity="0.92" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="14.5" font-weight="400" letter-spacing="0.03em">keeps the engines and the evidence</text>
+
+    <!-- Bottom Telemetry Footer -->
+    <text x="1237" y="612" text-anchor="middle" fill="#7f7c99" fill-opacity="0.6" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10" letter-spacing="0.20em">Φ +π · EMPIRICAL KERNEL</text>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- PANEL 4: PETER · CYAN (#00f0ff) · DESIGN + ARCHITECT · SPIRAL SIGIL   -->
+  <!-- Panel bounds: x=1486, y=112, width=450, height=528, center cx=1711    -->
+  <!-- ===================================================================== -->
+  <g id="panel-4-peter">
+    <!-- Panel Surface & 1px Border -->
+    <rect x="1486" y="112" width="450" height="528" rx="12" fill="url(#panel-surface)" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+    <rect x="1486" y="112" width="450" height="528" rx="12" fill="url(#glow-cyan)"/>
+
+    <!-- Top Accent Highlight Bar & Corner Reticles -->
+    <line x1="1606" y1="112" x2="1816" y2="112" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 1486 134 V 124 Q 1486 112 1498 112 H 1508" stroke="#00f0ff" stroke-width="1.5" stroke-opacity="0.7" fill="none"/>
+    <path d="M 1914 112 H 1924 Q 1936 112 1936 124 V 134" stroke="#00f0ff" stroke-width="1.5" stroke-opacity="0.7" fill="none"/>
+
+    <!-- Panel Index Telemetry -->
+    <text x="1512" y="144" fill="#7f7c99" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10.5" letter-spacing="0.18em">04 //  ◎ FORM</text>
+    <circle cx="1846" cy="140" r="3" fill="#00f0ff"/>
+    <text x="1856" y="144" fill="#7f7c99" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10.5" letter-spacing="0.12em">#00F0FF</text>
+
+    <!-- Sigil 4: Geometric Spiral (Centered at 1711, 272) -->
+    <g id="sigil-spiral">
+      <!-- Outer Reference Ring & Golden Ratio Construction Grid -->
+      <circle cx="1711" cy="272" r="88" stroke="#7f7c99" stroke-width="0.75" stroke-opacity="0.22" stroke-dasharray="3 6"/>
+      <circle cx="1711" cy="272" r="68" stroke="#00f0ff" stroke-width="0.75" stroke-opacity="0.18"/>
+      <circle cx="1711" cy="272" r="42" stroke="#00f0ff" stroke-width="0.6" stroke-opacity="0.16" stroke-dasharray="2 4"/>
+      <line x1="1711" y1="172" x2="1711" y2="372" stroke="#00f0ff" stroke-width="0.75" stroke-opacity="0.28" stroke-dasharray="2 5"/>
+      <line x1="1611" y1="272" x2="1811" y2="272" stroke="#00f0ff" stroke-width="0.75" stroke-opacity="0.28" stroke-dasharray="2 5"/>
+      <line x1="1645" y1="206" x2="1777" y2="338" stroke="#00f0ff" stroke-width="0.6" stroke-opacity="0.20" stroke-dasharray="2 5"/>
+      <line x1="1645" y1="338" x2="1777" y2="206" stroke="#00f0ff" stroke-width="0.6" stroke-opacity="0.20" stroke-dasharray="2 5"/>
+
+      <!-- Luminous Spiral Geometry -->
+      <g filter="url(#sigil-glow)">
+        <!-- Primary 3.25-Turn Geometric Spiral (Archimedean expansion centered at 1711, 272) -->
+        <path d="M 1715.00 272.00 C 1715.47 272.52 1715.84 273.24 1716.01 274.08 C 1716.18 274.91 1716.14 275.87 1715.84 276.84 C 1715.54 277.81 1714.98 278.79 1714.16 279.64 C 1713.35 280.49 1712.27 281.22 1711.00 281.69 C 1709.73 282.17 1708.27 282.39 1706.75 282.27 C 1705.22 282.15 1703.63 281.69 1702.13 280.87 C 1700.64 280.04 1699.24 278.85 1698.10 277.34 C 1696.96 275.84 1696.09 274.01 1695.62 272.00 C 1695.14 269.99 1695.07 267.78 1695.47 265.57 C 1695.88 263.35 1696.76 261.13 1698.11 259.11 C 1699.46 257.09 1701.28 255.26 1703.48 253.84 C 1705.67 252.42 1708.24 251.40 1711.00 250.92 C 1713.76 250.45 1716.71 250.52 1719.61 251.21 C 1722.51 251.90 1725.37 253.20 1727.92 255.08 C 1730.47 256.96 1732.71 259.42 1734.42 262.30 C 1736.12 265.18 1737.29 268.50 1737.77 272.00 C 1738.24 275.50 1738.02 279.20 1737.05 282.79 C 1736.07 286.38 1734.35 289.86 1731.94 292.94 C 1729.54 296.02 1726.45 298.68 1722.88 300.68 C 1719.31 302.67 1715.25 303.99 1711.00 304.46 C 1706.75 304.94 1702.31 304.56 1698.03 303.31 C 1693.75 302.05 1689.64 299.90 1686.03 296.97 C 1682.43 294.03 1679.34 290.32 1677.07 286.06 C 1674.79 281.80 1673.32 276.99 1672.85 272.00 C 1672.37 267.01 1672.89 261.82 1674.44 256.85 C 1675.98 251.89 1678.55 247.14 1682.01 243.01 C 1685.47 238.88 1689.82 235.37 1694.77 232.81 C 1699.71 230.24 1705.26 228.63 1711.00 228.15 C 1716.74 227.68 1722.67 228.35 1728.32 230.18 C 1733.98 232.01 1739.36 235.00 1744.02 238.98 C 1748.67 242.97 1752.60 247.95 1755.45 253.59 C 1758.30 259.22 1760.06 265.52 1760.54 272.00 C 1761.01 278.48 1760.20 285.16 1758.08 291.50 C 1755.97 297.85 1752.55 303.86 1748.04 309.04 C 1743.53 314.23 1737.92 318.58 1731.59 321.71 C 1725.27 324.85 1718.23 326.76 1711.00 327.23 C 1703.77 327.71 1696.35 326.74 1689.32 324.34 C 1682.29 321.94 1675.64 318.11 1669.93 313.07 C 1664.22 308.03 1659.45 301.78 1656.03 294.77 C 1652.61 287.76 1650.55 279.97 1650.08 272.00 C 1649.60 264.03 1650.71 255.86 1653.40 248.14 C 1656.08 240.42 1660.34 233.15 1665.91 226.91 C 1671.48 220.67 1678.35 215.47 1686.05 211.77 C 1693.75 208.07 1702.28 205.86 1711.00 205.38 C 1719.72 204.91 1728.63 206.17 1737.04 209.14 C 1745.45 212.11 1753.35 216.79 1760.12 222.88 C 1766.88 228.98 1772.50 236.48 1776.49 244.87 C 1780.48 253.26 1782.83 262.53 1783.31 272.00 C 1783.78 281.47 1782.37 291.12 1779.12 300.22 C 1775.86 309.31 1770.76 317.85 1764.14 325.14 C 1757.52 332.43 1749.38 338.47 1740.30 342.75 C 1731.23 347.02 1721.21 349.53 1711.00 350.00"
+              fill="none" stroke="#00f0ff" stroke-width="2.2" stroke-linecap="round"/>
+
+        <!-- Secondary Counter-Phase Harmonic Spiral Trace -->
+        <path d="M 1707.00 272.00 C 1706.53 271.48 1706.17 270.76 1706.00 269.93 C 1705.84 269.10 1705.88 268.14 1706.18 267.18 C 1706.48 266.22 1707.04 265.25 1707.85 264.40 C 1708.67 263.55 1709.74 262.83 1711.00 262.36 C 1712.26 261.89 1713.71 261.68 1715.23 261.80 C 1716.74 261.91 1718.32 262.37 1719.81 263.19 C 1721.29 264.01 1722.68 265.20 1723.81 266.69 C 1724.94 268.19 1725.80 270.00 1726.27 272.00 C 1726.74 274.00 1726.81 276.19 1726.41 278.38 C 1726.01 280.58 1725.13 282.79 1723.79 284.79 C 1722.45 286.80 1720.64 288.60 1718.46 290.02 C 1716.28 291.43 1713.74 292.44 1711.00 292.91 C 1708.26 293.38 1705.34 293.30 1702.46 292.62 C 1699.58 291.94 1696.75 290.64 1694.22 288.78 C 1691.69 286.91 1689.47 284.48 1687.78 281.62 C 1686.08 278.76 1684.92 275.47 1684.45 272.00 C 1683.98 268.53 1684.21 264.86 1685.17 261.30 C 1686.14 257.74 1687.85 254.29 1690.24 251.24 C 1692.62 248.19 1695.68 245.55 1699.22 243.57 C 1702.77 241.59 1706.79 240.29 1711.00 239.82 C 1715.21 239.35 1719.61 239.72 1723.85 240.97 C 1728.10 242.21 1732.18 244.34 1735.75 247.25 C 1739.32 250.16 1742.38 253.84 1744.64 258.07 C 1746.90 262.29 1748.35 267.05 1748.82 272.00 C 1749.29 276.95 1748.77 282.09 1747.24 287.01 C 1745.71 291.94 1743.16 296.64 1739.73 300.73 C 1736.31 304.83 1732.00 308.30 1727.09 310.84 C 1722.19 313.39 1716.69 314.98 1711.00 315.45 C 1705.31 315.92 1699.44 315.26 1693.83 313.45 C 1688.23 311.64 1682.90 308.67 1678.28 304.72 C 1673.67 300.77 1669.77 295.83 1666.95 290.25 C 1664.13 284.66 1662.38 278.43 1661.91 272.00 C 1661.44 265.57 1662.25 258.96 1664.34 252.67 C 1666.44 246.39 1669.82 240.43 1674.29 235.29 C 1678.77 230.16 1684.33 225.85 1690.60 222.74 C 1696.86 219.64 1703.84 217.74 1711.00 217.27 C 1718.16 216.80 1725.51 217.76 1732.48 220.14 C 1739.45 222.51 1746.03 226.31 1751.69 231.31 C 1757.35 236.30 1762.08 242.49 1765.47 249.44 C 1768.85 256.39 1770.89 264.10 1771.36 272.00 C 1771.83 279.90 1770.73 287.99 1768.07 295.64 C 1765.41 303.29 1761.19 310.50 1755.68 316.68 C 1750.16 322.86 1743.35 328.00 1735.72 331.67 C 1728.09 335.34 1719.64 337.53 1711.00 338.00"
+              fill="none" stroke="#00f0ff" stroke-width="1.15" stroke-opacity="0.52" stroke-dasharray="3 4" stroke-linecap="round"/>
+      </g>
+
+      <!-- Harmonic Phase Nodes along the Spiral & Glowing Center -->
+      <circle cx="1711" cy="350" r="3.5" fill="#00f0ff"/>
+      <circle cx="1783.3" cy="272" r="3.2" fill="#00f0ff"/>
+      <circle cx="1711" cy="205.4" r="3" fill="#00f0ff"/>
+      <circle cx="1650.1" cy="272" r="2.8" fill="#00f0ff"/>
+      <circle cx="1711" cy="327.2" r="2.6" fill="#00f0ff" fill-opacity="0.85"/>
+      <circle cx="1760.5" cy="272" r="2.6" fill="#00f0ff" fill-opacity="0.85"/>
+      <circle cx="1711" cy="272" r="14" fill="url(#halo-cyan)"/>
+      <circle cx="1711" cy="272" r="4" fill="#ffffff"/>
+    </g>
+
+    <!-- Panel Divider -->
+    <line x1="1522" y1="398" x2="1697" y2="398" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+    <circle cx="1711" cy="398" r="4" stroke="#00f0ff" stroke-width="1.5" fill="#05060a"/>
+    <line x1="1725" y1="398" x2="1900" y2="398" stroke="rgba(170,150,255,0.2)" stroke-width="1"/>
+
+    <!-- Name in Large Monospace Caps -->
+    <text x="1711" y="458" text-anchor="middle" fill="#cfc9dd" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="44" font-weight="700" letter-spacing="0.16em">PETER</text>
+
+    <!-- Title in Small Letter-Spaced Caps Beneath -->
+    <rect x="1573" y="484" width="276" height="30" rx="6" fill="#0d1220" fill-opacity="0.9" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.45"/>
+    <text x="1711" y="504" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="13" font-weight="600" letter-spacing="0.22em">DESIGN + ARCHITECT</text>
+
+    <!-- One Short Monospace Line of What They Do -->
+    <text x="1711" y="562" text-anchor="middle" fill="#cfc9dd" fill-opacity="0.92" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="14.5" font-weight="400" letter-spacing="0.03em">keeps the shape and the touch</text>
+
+    <!-- Bottom Telemetry Footer -->
+    <text x="1711" y="612" text-anchor="middle" fill="#7f7c99" fill-opacity="0.6" font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10" letter-spacing="0.20em">Φ +3π/2 · HARMONIC TOPOLOGY</text>
+  </g>
+
+  <!-- 4. BOTTOM CANVAS TELEMETRY BAR -->
+  <g font-family="'JetBrains Mono', 'SF Mono', 'Fira Code', 'Menlo', 'Consolas', 'Liberation Mono', monospace" font-size="10" fill="#7f7c99" letter-spacing="0.18em">
+    <text x="64" y="666">8B.IS // CREW MANIFEST · VIEWPORT 2000×700</text>
+    <g transform="translate(1390, 658)">
+      <circle cx="0" cy="4" r="3" fill="#62e6c9"/>
+      <text x="10" y="8" fill="#cfc9dd" fill-opacity="0.72">ALEX</text>
+      <circle cx="135" cy="4" r="3" fill="#e8b05c"/>
+      <text x="145" y="8" fill="#cfc9dd" fill-opacity="0.72">CHRIS</text>
+      <circle cx="280" cy="4" r="3" fill="#b48bff"/>
+      <text x="290" y="8" fill="#cfc9dd" fill-opacity="0.72">NATE</text>
+      <circle cx="415" cy="4" r="3" fill="#00f0ff"/>
+      <text x="425" y="8" fill="#cfc9dd" fill-opacity="0.72">PETER</text>
+    </g>
+  </g>
+</svg>

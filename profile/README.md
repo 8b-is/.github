@@ -6,6 +6,45 @@ Welcome to the public gateway of the **8b.is** research group repository index. 
 
 Here you will find our open-source tools, protocol specifications, mathematical models, and Rust-powered system modules.
 
+![8b.is — a luminous harmonic interference pattern beside the wordmark, everything under the sun](./assets/hero.svg)
+
+---
+
+## 🎨 The design system — constellation ink
+
+One palette, one type system, one motion rule across every 8b-is surface. The
+full spec lives in [`design/DESIGN.md`](./design/DESIGN.md); the machine-readable
+tokens are [`design/tokens.json`](./design/tokens.json) and
+[`design/tokens.css`](./design/tokens.css).
+
+| token | hex | role |
+|-------|-----|------|
+| `--bg` | `#05060a` | canvas — near-black, never pure black |
+| `--panel` | `#0b0f19` | raised surface |
+| `--ink` | `#cfc9dd` | primary text |
+| `--dim` | `#7f7c99` | secondary text |
+| `--mint` | `#62e6c9` | primary accent |
+| `--gold` | `#e8b05c` | the mark · the sun |
+| `--violet` | `#b48bff` | memory · constellation |
+| `--cyan` | `#00f0ff` | signal · readout |
+
+Type is **monospace for structure, serif for the human voice**. Motion is
+**live-drawn, never baked** — surfaces draw themselves and respect
+`prefers-reduced-motion`.
+
+---
+
+## 👥 The crew
+
+![The crew: Alex, CEO; Chris, CVO; Nate, CTO and CRO; Peter, Design and Architect](./assets/roles.svg)
+
+| seat | who | keeps |
+|------|-----|-------|
+| **CEO** | Alex | the family and the course |
+| **CVO · Chief Visionary** | Chris | the horizon in view |
+| **CTO + CRO** | Nate | the engines and the evidence |
+| **Design + Architect** | Peter | the shape and the touch |
+
 ---
 
 ## 🌟 Featured Public Projects
