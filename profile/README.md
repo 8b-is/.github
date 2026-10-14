@@ -6,16 +6,16 @@ Welcome to the public gateway of the **8b.is** research group repository index. 
 
 Here you will find our open-source tools, protocol specifications, mathematical models, and Rust-powered system modules.
 
-![8b.is — a luminous harmonic interference pattern beside the wordmark, everything under the sun](./assets/hero.svg)
+![8b.is — a luminous harmonic interference pattern beside the wordmark, everything under the sun](https://raw.githubusercontent.com/8b-is/.github/master/assets/hero.svg)
 
 ---
 
 ## 🎨 The design system — constellation ink
 
 One palette, one type system, one motion rule across every 8b-is surface. The
-full spec lives in [`design/DESIGN.md`](./design/DESIGN.md); the machine-readable
-tokens are [`design/tokens.json`](./design/tokens.json) and
-[`design/tokens.css`](./design/tokens.css).
+full spec lives in [`design/DESIGN.md`](https://github.com/8b-is/.github/blob/master/design/DESIGN.md); the machine-readable
+tokens are [`design/tokens.json`](https://github.com/8b-is/.github/blob/master/design/tokens.json) and
+[`design/tokens.css`](https://github.com/8b-is/.github/blob/master/design/tokens.css).
 
 | token | hex | role |
 |-------|-----|------|
@@ -36,7 +36,7 @@ Type is **monospace for structure, serif for the human voice**. Motion is
 
 ## 👥 The crew
 
-![The crew: Alex, CEO; Chris, CVO; Nate, CTO and CRO; Peter, Design and Architect](./assets/roles.svg)
+![The crew: Alex, CEO; Chris, CVO; Nate, CTO and CRO; Peter, Design and Architect](https://raw.githubusercontent.com/8b-is/.github/master/assets/roles.svg)
 
 | seat | who | keeps |
 |------|-----|-------|
