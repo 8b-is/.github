@@ -19,8 +19,8 @@ type system, one motion rule. Everything else is a surface that wears it.
 | `--panel` | `#0b0f19` | raised surface (cards, nav) |
 | `--panel-2` | `#0e1424` | second elevation (nested cards) |
 | `--ink` | `#cfc9dd` | primary text |
-| `--dim` | `#7f7c99` | secondary text, labels |
-| `--faint` | `#5b577a` | tertiary text, captions |
+| `--dim` | `#7f7c99` | secondary text, labels, captions |
+| `--faint` | `#5b577a` | non-informative decoration only |
 | `--line` | `rgba(170,150,255,0.18)` | hairline borders |
 
 ### Accents
@@ -39,7 +39,14 @@ type system, one motion rule. Everything else is a surface that wears it.
 - Accents are never used as large fills. They are strokes, glyphs, 1px borders,
   and small text. The one exception is a solid `--mint` primary button.
 - Never more than two accents in a single card.
-- Text on `--bg` must clear WCAG AA: `--ink` on `--bg` = 12.4:1, `--dim` = 4.6:1.
+- Normal-size text must clear [WCAG AA](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) (4.5:1). At full opacity, `--ink`
+  on `--bg` is 12.59:1 and `--dim` is 5.06:1. Use `--dim` for captions;
+  it also clears 4.5:1 on `--panel` and `--panel-2`. Recheck contrast when
+  changing the background or opacity.
+- `--faint` on `--bg` is only 2.98:1. Keep it for non-informative decoration,
+  never text, focus indicators, or controls that convey information. Its
+  existing `color.text.faint` JSON key is retained for compatibility; that
+  key does not make it a suitable text color.
 
 ---
 

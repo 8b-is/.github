@@ -13,7 +13,7 @@
   /* text */
   --ink: #cfc9dd;
   --dim: #7f7c99;
-  --faint: #5b577a;
+  --faint: #5b577a; /* Non-informative decoration only; use --dim for captions. */
 
   /* accents */
   --mint: #62e6c9;
