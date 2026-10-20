@@ -8,13 +8,13 @@ https://github.com/topics/beamforming
 -->
 
 ## Contents
-- [Speech_Enhancement](#Speech_Enhancement)
-- [Dereverberation](#Dereverberation)
-- [Speech_Seperation](#Speech_Seperation)
-- [Array_Signal_Processing](#Array_Signal_Processing)
-- [Tools](#Tools)
-- [Books](#Books)
-- [Resources](#Resources)
+- [Speech Enhancement](#speech_enhancement)
+- [Dereverberation](#dereverberation)
+- [Speech Separation](#speech-separation-single-channel)
+- [Array Signal Processing](#array-signal-processing)
+- [Tools](#tools)
+- [Books](#books)
+- [Resources](#resources)
 
 ## Speech_Enhancement
 
@@ -235,7 +235,7 @@ https://github.com/topics/beamforming
 [[Code]](https://github.com/speechLabBcCuny/onssen)
 * separation_data_preparation[[Code]](https://github.com/YongyuG/separation_data_preparation)
 * MatlabToolbox [[Code]](https://github.com/IoSR-Surrey/MatlabToolbox)
-* athena-signal [[Code]](https://github.com/athena-team/athena-signal）
+* athena-signal [[Code]](https://github.com/athena-team/athena-signal)
 * python_speech_features [[Code]](https://github.com/jameslyons/python_speech_features)
 * speechFeatures [[Code]](https://github.com/SusannaWull/speechFeatures)
 * sap-voicebox [[Code]](https://github.com/ImperialCollegeLondon/sap-voicebox)
