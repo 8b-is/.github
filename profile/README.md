@@ -49,6 +49,38 @@ Type is **monospace for structure, serif for the human voice**. Motion is
 
 ## 🌟 Featured Public Projects
 
+### [aurora](https://github.com/8b-is/aurora)
+*Sovereign Rust + Go + HTML/Canvas Cognitive Architecture (`~~~~○●♤°♡•》《`)*
+- **Description**: Zero-float (`p/q`) cognitive engine, Hamilton Apollo 11 executive priority scheduler (`1201`/`1202` overload shedding), `MEM|8` 64-byte cache-line-aligned wave memory tuples, and 6-stage `kompress-ultra` pipeline.
+- **Key Features**:
+  - Strict zero-float enforcement (`cmd/aurora-agy audit .`) across Rust, Go, and browser HUD scripts.
+  - `WaveMemoryTuple::to_wupz_bytes`, 4-way unrolled `wupz_xor_fold` / `wupz_popcount`, SWAR `wupz_byte_diff`, `32B` `0x62`-gate frame sealing, and `BFP-64` Kleene bitplanes (`+AND=1`, `~NAND=-1`).
+
+### [wupz](https://github.com/8b-is/wupz) & [upz](https://github.com/8b-is/upz) (`wupz.vaked.dev`)
+*Incremental Ultra-Fast Linker + `kompress-super-ultra` Packer (`w(ild) + UPX + z(ig)`)*
+- **Description**: Packs executables *during* layout in a single pass with zero-alloc Zig 0.16 SIMD kernels linked into Rust over a versioned C11 ABI (`ABI v1`).
+- **Key SOTA Receipts (Apple Silicon M-Series, 64 MiB working set)**:
+  - `xor_fold`: **39.49 GiB/s** (`1.58 ms`, **13.5×** over `rust-scalar` via dual `@Vector(4, u64)` deferred `@reduce`).
+  - `popcount`: **37.34 GiB/s** (`1.67 ms`, **3.2×** over `rust-scalar` via 992B deferred `@Vector(16, u8)` reduction).
+  - `byte_diff`: **16.86 GiB/s** (`3.71 ms`, **3.7×** over `rust-scalar` via 4064B deferred `@Vector(16, u8)` reduction).
+  - `64B@align(64)` `LitanyWireFrame` (`0x62` gate, `BFP-64` fold `0xe1034e575c371ab0` at `qt:55`, `.rodata.gaia.b158` `1.585 bits/trit` `base-243` `SPQT` packing).
+
+### [spherepop-kernel](https://github.com/8b-is/spherepop-kernel)
+*Deterministic Event-Sourced Kernel & Multi-Language Independent Verifiers (Go · Zig · Rust · Python · Perl 5 · Idris 2)*
+- **Description**: Replayable capability-graph kernel where every state transition requires a verifiable witness (`#Commit = #ValidWitness`), with zero-alloc `SPQT` (`base-243`) ternary codecs and `0x62`-gate `BFP-64` bitplanes.
+- **Key Features**:
+  - 4-way unrolled Go `XORFold` (**56.92 GB/s**), `Popcount` (**21.39 GB/s**), and SWAR `ByteDiff` (**7.70 GB/s**) with bit-for-bit Zig 0.16 SIMD and Idris 2 QTT parity.
+
+### [zeno](https://github.com/8b-is/zeno) (`zeno.vaked.dev` · 銭・禅・善)
+*Sovereign Biometric & NFC-F / Contactless-EMV Settlement Engine (`Σ(1/2)^n = 1`)*
+- **Description**: Continuous sub-yen (`μJPY`) streaming settlement and single-use ephemeral handshake engine across Rust (`zeno-core`, `zeno-issuer-angel`, `zeno-native`), Cloudflare Workers + Durable Objects, and Android 15/16 (`G75` & `Galaxy S25 Ultra`).
+- **Key Features**:
+  - `EphemeralSingleUseHandshake` (monotonic single-use tap counter + `32B` `0x62`-gate frame seal + `BFP-64` `qt:55` bitplanes) so intercepted payloads cannot be replayed.
+
+### [alexiai](https://github.com/8b-is/alexiai) & [wigle-triad](https://github.com/8b-is/wigle-triad) (`esp32.vaked.dev`)
+*`GAIA-MLX-QUANT` `b1.58` Ternary Inference & 3-Node `ESP32-S3` `MEDUSA` Triad (`ADA` · `VAK` · `OMN`)*
+- **Description**: Pure-integer `p/q` `1.58-bit` (`{-1, 0, +1}`) model quantization (`20.19×` compression vs FP32) wired into the 3-node `ESP32-S3` AMOLED `MEDUSA` triad (`*` `432 Hz`, `/\` `528 Hz`, `oo` `852 Hz`) and `8s.is` DataBomb v3.0 Custodian (`Record != Admit != Commit`).
+
 ### [smart-tree](https://github.com/8b-is/smart-tree)
 *The Smart Treehouse: Cyber-Botanical Dashboard & Agent-Agnostic Hooks*
 - **Description**: A blazingly fast, AI-optimized directory visualization engine built in Rust (10-24x faster than traditional `tree`).
