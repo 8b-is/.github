@@ -10,6 +10,30 @@ Here you will find our open-source tools, protocol specifications, mathematical 
 
 ---
 
+## 🧭 The Ontological Boundary Contract: Structural Honesty (`8B-META-WP-v0.0`)
+
+Following Guimond (`flyxion`) on *Persistence Before Truth* and *The Witness Plane*, every module across the **8B Ecosystem** ([`dream.8b.is`](https://dream.8b.is), [`riva.8b.is`](https://riva.8b.is/), [`pocoo.vaked.dev`](https://pocoo.vaked.dev)) is governed by the **8B Two-Column Ontological Boundary Contract** ([`Working Paper v0.0 — 8B Loop-Closing Checkpoint`](https://github.com/8b-is/dream/blob/main/paper/WORKING_PAPER_v0.0_8B_LOOP_CLOSING_CHECKPOINT.md) · [`PDF`](https://dream.8b.is/paper/Working_Paper_v0.0_8B_Loop-Closing_Checkpoint.pdf)):
+
+| Domain Layer | Ontological Status | Governing Law | Role in the 8B Ecosystem |
+| :--- | :--- | :--- | :--- |
+| **Column A: The Mechanical Substrate** (`MEM\|8`, `BitNet b1.58`, `8B Omni-Vietnam-FPGA`, `ESP32-S3 node-FLUGos`) | Deterministic, non-sentient boolean and fixed-point integer state machines | Information Theory, Linear Algebra, Digital Signal Processing, Cryptographic Hashing | Executes wave compaction, 4-bit complex ternary contractions (`0 DSP` LUT6 / SIMD `POPCNT`), and 32-byte BLAKE3 state attestation. |
+| **Column B: The Architect's Heuristics** (Ultrarunning, Dream Yoga, Hypnosis, *Képzavar*, `pocoo.vaked.dev`) | Lived human neurobiology, attentional regulation, and poetic synthesis | Systems Neuroscience, Exercise Physiology, Contemplative Psychology, Poetics | Provides biological blueprints for resource-constrained noise suppression and human-centered design ethics. |
+
+> **Core Invariant:** Column B inspires the mathematical topology of Column A, and Column A serves the human autonomy of Column B, but Column A never claims subjective consciousness, and Column B is never reduced to mere bit-flips.
+
+### Unified Master Lookup Table (The "Kompressed" 8B Rosetta Stone)
+
+| Creative / Phenomenological Concept (`pocoo.vaked.dev` / Shinjuku Walk Notes) | Theoretical Principle (`standardgalactic` / Flyxion) | Mathematical Operator (`MEM\|8` / UltraDreamState) | Silicon / Code Implementation (`8B Stack`) |
+| :--- | :--- | :--- | :--- |
+| **Stillness in Motion** (Ultrarunning / Transient Hypofrontality) | *Entropy's Edge* & *Persistence Before Truth* | Quiescence Gate $\Gamma(t)$ & Radial Soft-Thresholding $\mathcal{P}_{\eta}$ | Idle-loop detector + dead-zone clamp ($\Delta = \gamma / 2$) |
+| **Dream Yoga / Recognizing the Projection** (Milarepa `梦 幻 光 歌 醒` / Leaf & Ash) | *Non-Injective Projection* & *The Witness Plane* | First-Order Spatial $\Sigma\Delta$ Modulator ($\widetilde{Z}_{m,n} = Z_{m,n} + e^{ik_0}\mathcal{E}_{m,n-1}$) | `packRowSigmaDelta()` in Zig / On-chip FPGA $\Sigma\Delta$ packer ($1.04^\circ\text{ RMS}$, $5.22\text{ ENOB}$) |
+| **Hypnotic Focus / The 3.2s Dyad Breath** ([`riva.8b.is`](https://riva.8b.is/)) | *Intelligence is the Geometry of Constraints* | Narrowband Carrier Demodulation ($\int \psi_k e^{-i\Omega_0 \tau} d\tau$) | Baseband/carrier phase lock ($H_{0,1} = e^{ik_0}$) |
+| ***Képzavar* (Cross-Modal Poetic Bridge)** (`pocoo.vaked.dev`) | *Conditions of a Common World* | Complex Quadrature Cross-Contraction ($T^{(R)}x^{(I)} + T^{(I)}x^{(R)}$) | 8 boolean masks (`p_re`, `q_re`, `p_im`, `q_im`) in LUT6 / SIMD |
+| **The Unbroken Thread / Stone Invariant** (Red Ribbon & 1712 Taisō-ji Jizō) | *Preventing the Collapse of Future Option Space* | BLAKE3 Chained Merkle State Transition ($S^{(n+1)}$) | `computeWakingSeal()` + `node-FLUGos` eBPF Auditor |
+| **Co-Dreaming Under One Roof** (Multi-node cluster in Tokyo) | *The Fate of Distinguishability* | Kuramoto Phase-Lock Order Parameter $R(T_{\text{dream}}) \ge 0.9745$ | Dual circular OLED wavefield HUDs on ESP32-S3 nodes |
+
+---
+
 ## 🎨 The design system — constellation ink
 
 One palette, one type system, one motion rule across every 8b-is surface. The
@@ -48,6 +72,13 @@ Type is **monospace for structure, serif for the human voice**. Motion is
 ---
 
 ## 🌟 Featured Public Projects
+
+### [dream](https://github.com/8b-is/dream) (`dream.8b.is` · `8B-META-WP-v0.0`)
+*UltraDreamState, Distinction Geometry (`flyxion`), 9-State Complex Ternary $\Sigma\Delta$ Kernel, Balanced-Ternary Fibonacci via NAND Gates (`OEIS A000045`), and Florilegium-8B Provenance*
+- **Live Portal & Papers**: [`https://dream.8b.is`](https://dream.8b.is) · [`Working Paper v0.0 Checkpoint (PDF)`](https://dream.8b.is/paper/Working_Paper_v0.0_8B_Loop-Closing_Checkpoint.pdf) · [`UltraDreamState Full Paper (PDF)`](https://dream.8b.is/paper/ultradreamstate_8b_paper.pdf) · [`ENTHEAI_OMNI_ULTRADREAMSTATE_ONESHOT.md`](https://github.com/8b-is/dream/blob/main/ENTHEAI_OMNI_ULTRADREAMSTATE_ONESHOT.md)
+- **Key Features**:
+  - Phase-locked to the `3.2s` [`riva.8b.is`](https://riva.8b.is/) dyad breath oscillator, modeling **Waking Mode (Yamada)** $\leftrightarrow$ **UltraDreamState (Tayama)** with first-order spatial $\Sigma\Delta$ noise shaping ($1.04^\circ\text{ RMS}$ in-band phase accuracy, $5.22\text{ ENOB}$ at $\text{OSR}=8$, $32\times$ compression).
+  - Bit-exact cross-target attestation (`zig_seal == fpga_seal == esp32_seal`) across Zig `@Vector(4, u64)` SIMD, **8B Omni-Vietnam-FPGA** (`0 DSP48E2` LUT6 compressor trees), and dual circular-display **ESP32-S3 `node-FLUGos`** nodes.
 
 ### [aurora](https://github.com/8b-is/aurora)
 *Sovereign Rust + Go + HTML/Canvas Cognitive Architecture (`~~~~○●♤°♡•》《`)*
